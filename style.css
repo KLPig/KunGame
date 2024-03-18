@@ -1,0 +1,48 @@
+#screen
+{
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-width: 0;
+}
+.block
+{
+    position: fixed;
+    width: 25%;
+    height: 25%;
+    margin: 0;
+    padding: 0;
+    transition: top 0.5s;
+    left: 0;
+    top: -25%;
+    border: 5px inset darkcyan;
+    box-sizing: border-box;
+}
+div.block
+{
+    background-color: aliceblue;
+}
+div.block.under
+{
+    background-color: cadetblue;
+}
+:root{
+    font-family: monospace;
+    text-align: center;
+}
+body{
+    background-color: lightcyan;
+}
+#game
+{
+    height: min(80svh, 100svw);
+    width: calc(0.75 * min(80svh, 100svw));
+    border: 5px inset darkcyan;
+    position: fixed;
+    left: calc((100svw - (0.75 * min(80svh, 100svw))) / 2);
+}

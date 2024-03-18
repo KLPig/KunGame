@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Game</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <h1 id="score">Kun Game</h1>
+        <iframe src="./start.html" id="game"></iframe>
+        <script>
+            setInterval(
+                function(){
+                    if(localStorage.time == 'undefined')
+                        document.getElementById('score').innerHTML = 'Kun game'
+                    else{
+                        document.getElementById('score').innerHTML = 
+                        localStorage.time / 10
+                    }
+                }, 100
+            )
+        </script>
+    </body>
+</html>

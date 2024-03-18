@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Game</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <h1>Kun Game</h1>
+        <h2>Press anywhere to start</h2>
+        <script>
+            document.addEventListener(
+                'click',
+                function(){
+                    open('./main.htm', '_self')
+                }
+            )
+            localStorage.time = undefined
+        </script>
+    </body>
+</html>
