@@ -11,10 +11,10 @@
             setInterval(
                 function(){
                     if(localStorage.time == 'undefined')
-                        document.getElementById('score').innerHTML = 'Kun game'
+                        document.getElementById('score').innerHTML = 'Kun Game'
                     else{
-                        document.getElementById('score').innerHTML = 
-                        localStorage.time / 10
+                        document.getElementById('score').innerHTML = 'Time: ' +
+                        localStorage.time / 10 + ' Score: ' + localStorage.score
                     }
                 }, 100
             )
